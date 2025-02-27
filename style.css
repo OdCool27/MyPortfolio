@@ -278,7 +278,7 @@ body{
     color:var(--accent);
 }
 
-@media (min-width:800px){
+@media (max-width:800px){
     .word{padding:10px;}
 }
 
