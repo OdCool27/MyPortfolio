@@ -278,6 +278,10 @@ body{
     color:var(--accent);
 }
 
+@media (min-width:800px){
+    .word{padding:10px;}
+}
+
 /*------------------PROJECTS-------------------*/
 .projects{
     padding:60px;
