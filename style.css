@@ -293,12 +293,58 @@ body{
 }
 
 /*------------------PROJECTS-------------------*/
-.projects{
-    padding:60px;
+.projects {
+    padding: 60px;
     border-bottom: 2px solid var(--text2);
 }
 
-.projects p{
-    text-align:center;
+.projects p {
+    text-align: center;
 }
 
+.project_display {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(113, 233, 135, 0.5);
+    color: var(--text1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: height 0.4s ease-in-out;
+}
+
+.img-container:hover .cover {
+    height: 100%;
+}
